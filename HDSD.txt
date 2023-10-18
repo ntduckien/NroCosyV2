@@ -1,0 +1,26 @@
+﻿Hãy tôn trọng quyền tác giả và không sửa đổi nguồn cre: Hoàng Việt Dũng ở bên trong, xin cảm ơn!
+----------------------------
+Hướng dẫn cài đặt:
+- Sửa kết nối và các cài đặt khác ở: /core/config.php
+- Up sql hoangvietdung.sql lên source server Girlkun, đảm bảo account của sql girlkun phải có thoi_vang để đổi hoặc kích hoạt sẽ ở đó.
+----------------------------
+Chức năng:
+- Kích hoạt thành viên bằng thỏi vàng.
+- Nạp thẻ (DoiThe1s.VN).
+ + URL Callback: domain/pages/callback.php (domain: tên miền của bạn).
+- Nạp ATM MB Bank:
+ + Url Cron: domain/crom_atm (domain: tên miền của bạn).
+ + Hướng dẫn lấy session và các thứ cần lấy.
+  * $taikhoanmb_config = ''; // tài khoản đăng nhập mbbank của bạn tại https://online.mbbank.com.vn
+  * $deviceIdCommon_config = ''; // thay cái thông số mà bạn lấy đc từ F12 vào đây 
+  * $sessionId_config = ''; // thay cái thông số mà bạn lấy đc từ F12 vào
+  * $sotaikhoanmb_config = ''; //số tài khoản mb
+ => Lúc login thành công tại https://online.mbbank.com.vn thì bấm vào số tài khoản, F12 lên rồi bấm truy vấn, vào phần nextwork của F12 search "get" rồi chọn file đầu tiên, vào Payload thì đó là nơi chứa 2 thông số còn lại.
+- Đổi mật khẩu.
+- HOT: Diễn đàn NRO.
+ + Đăng bài, cmt.
+ + Admin: xoá bài viết, cmt và đăng lên vùng dành cho admin.
+ + Bình luận: Cấm các từ ngữ đồi truỵ (anh em có thể thêm vào ở config).
+=> Chống spam lên đến 90%. Nếu bị ddos thì khuyên ae dùng Cloudflare để chặp ip ddos.
+----------------------------
+Chúc trải nghiệm source website vui vẻ, sửa nguồn thì nghiệp nặng đấy.
